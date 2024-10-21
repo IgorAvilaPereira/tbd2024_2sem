@@ -8,8 +8,7 @@ Mas qual a diferença entre ele o cache? O que acontece quando o banco cai? Have
 
 ## Características
 
-* é de código aberto. ERRATA: [A Queda do Redis!
-](https://www.youtube.com/watch?v=RTLkwH-PNcE) 
+* é de código aberto. ERRATA: [A Queda do Redis!](https://www.youtube.com/watch?v=RTLkwH-PNcE) 
 * permite tempos de respostas em consultas inferiores a um milissegundo
 
 ## Redis vs Demais Banco de Dados chave-valor
