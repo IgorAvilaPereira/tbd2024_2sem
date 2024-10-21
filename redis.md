@@ -503,7 +503,7 @@ redis 127.0.0.1:6379> smembers tutoriallist
 
 Sorted Sets são um tipo de dado similar a um mix entre os tipos Set e Hash. São conjuntos ordenados compostos de únicos e não-repetidos ***strings*** de elementos já que em alguns casos é interessante ordenar um conjunto.
 
-Entretanto, enquanto elementos dentro do conjunto ***Set*** não são ordenados, cada elemento em um conjunto ordenado é associados a valor de ponto flutuante, chamado de escore (isto é porque o otipo é também similar a um hash, onde cada elemento é mapeado em um valor).
+Entretanto, enquanto elementos dentro do conjunto ***Set*** não são ordenados, cada elemento em um conjunto ordenado é associados a valor de ponto flutuante, chamado de escore (isto é porque o o tipo é também similar a um hash, onde cada elemento é mapeado em um valor).
 
 
 ```BASH
