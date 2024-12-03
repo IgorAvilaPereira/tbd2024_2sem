@@ -1,7 +1,7 @@
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2024_1sem/main/disciplinas.csv' AS line1
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2024_2sem/main/disciplinas.csv' AS line1
 CREATE (d:Disciplina {semestre: line1.semestre, sigla: line1.sigla, nome: line1.nome, horas: toInteger(line1.horas)});
 
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2024_1sem/main/prerequisitos.csv' AS line2
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2024_2sem/main/prerequisitos.csv' AS line2
 MATCH (d1:Disciplina {sigla: line2.disciplina})
 MATCH (d2:Disciplina {sigla: line2.prerequisito})
 CREATE (d1)-[:PREREQUISITO]->(d2);
